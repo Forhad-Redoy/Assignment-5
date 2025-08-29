@@ -75,7 +75,7 @@
             const historyContainer = getElement('callHistory');
             
             if (callHistory.length === 0) {
-                historyContainer.innerHTML = '<div class="text-gray-500 text-center py-4">No calls made yet</div>';
+                historyContainer.innerHTML = '<div class="text-gray-500 text-center py-4"></div>';
                 return;
             }
             
