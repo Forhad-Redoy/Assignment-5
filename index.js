@@ -1,12 +1,49 @@
 
  let points = 100;
  let callHistory = [];
+ let count = 0;
 
+//    function for getElementById 
     function getElement(id){
        const element = document.getElementById(id)
         return element;
     }
-    
+ 
+
+        //function for Heart Icon Count
+
+        const buttons = document.querySelectorAll('.heartIcon');
+        
+        const countDisplay = getElement('totalHeart')
+
+        for (let i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", function() {
+        count++;
+        countDisplay.innerText = count;
+      });
+    }
+
+    // function for copy button
+   const countSpan = document.querySelector(".copyCount");
+    document.querySelector
+
+    document.addEventListener("click", e => {
+      if (e.target.classList.contains("copyBtn")) {
+        const text = e.target.parentElement.previousElementSibling.innerText;
+       
+        
+
+        navigator.clipboard.writeText(text).then(() => {
+          count++;
+          countSpan.textContent = count;
+          alert("Copied: " + text);
+        });
+      }
+    });
+
+
+ 
+    //  function for call and call history
         function updatePointsDisplay() {
             getElement('coins').textContent = points;
         }
@@ -17,7 +54,6 @@
                 return;
             }
 
-            // Show calling alert
             alert("Calling " + name + " at " + number);
             
 
@@ -91,17 +127,4 @@
         });
 
         updatePointsDisplay();
-        
-        // Heart Icon Count
-
-        let count = 0;
-        const buttons = document.querySelectorAll('.heartIcon');
-        
-        const countDisplay = getElement('totalHeart')
-
-        for (let i = 0; i < buttons.length; i++) {
-      buttons[i].addEventListener("click", function() {
-        count++;
-        countDisplay.innerText = count;
-      });
-    }
+     

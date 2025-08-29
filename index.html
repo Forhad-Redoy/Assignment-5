@@ -33,14 +33,14 @@
                     </div>
                 </div>
                 <div>
-                    <button class="flex gap-2 p-2 px-5 bg-[#00A63E] rounded-full  text-white"><span class="">0</span>Copy</button>
+                    <button class="flex gap-2 p-2 px-5 bg-[#00A63E] rounded-full  text-white"><span class="copyCount">0</span>Copy</button>
                 </div>
                 
             </div>
         </nav>
     </header>
     <!-- main section -->
-    <main class="mt-5 bg-[#F5FFF6]">
+    <main class="mt-5 bg-[#F5FFF6] mx-auto">
         <section >
             <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] h-60 flex flex-col justify-center items-center gap-y-4">
                 <img src="./assets/logo-dark.png      " alt="" class="w-20 h-20 flex" >
@@ -51,19 +51,18 @@
 
         <section class="lg:w-11/12 mx-auto mt-7">
             
-                <div id="contacts" class="grid grid-cols-1 lg:grid-cols-4 lg:grid gap-6">
+                <div id="contacts" class="grid grid-cols-1 lg:grid-cols-4 lg:grid gap-3">
                      <!-- National Emergency Number   -->
-                    <div class=" bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
+                    <div class="rounded-lg bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
                         <div class="flex justify-between">
                             <div class="p-2 bg-[#FFE3E1] rounded-xl">
                                 <img src="./assets/emergency.png" alt="emergency" class="w-6 h-6"/>
                             </div>
-                            <button class="heatIcon">
-
-                                <i class="heartIcon fa-solid fa-heart"></i>
-                            </button>
+                            
+                                <i class="heartIcon fa-solid fa-heart cursor-pointer"></i>
+                            
                         </div>
-                        <div class="mt-4">
+                        <div class="mt-4 card">
                             <div>
 
                                 <h2 class="card-title text-lg font-bold">National Emergency Number</h2>
@@ -74,18 +73,18 @@
                                 <span class="px-2 text-gray-500 bg-gray-200 rounded-lg">All</span>
                             </div>
                             <div class="flex gap-2 mt-5 ">
-                                <button class="w-1/2 h-8 border border-gray-200 rounded-md text-gray-400"><i class="fa-solid fa-copy"></i> Copy</button>
-                                <button data-name="National Emergency" data-number="999" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white"><i class="fa-solid fa-phone"> </i>Call</button>
+                                <button class="copyBtn w-1/2 h-8 border border-gray-200 rounded-md text-gray-400 cursor-pointer"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <button data-name="National Emergency" data-number="999" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"> </i>Call</button>
                             </div>
                         </div>
                     </div>
                     <!-- Police Helpline Number  -->
-                    <div class=" bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
+                    <div class="rounded-lg bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
                         <div class="flex justify-between">
                             <div class="p-2 rounded-xl">
                                 <img src="./assets/police.png" alt="emergency" class="w-6 h-6"/>
                             </div>
-                            <i class="heartIcon fa-solid fa-heart "></i>
+                            <i class="heartIcon fa-solid fa-heart cursor-pointer"></i>
                         </div>
                         <div class="mt-4">
                             <h2 class="card-title text-lg font-bold">Police Helpline Number</h2>
@@ -95,18 +94,18 @@
                                 <span class="px-2 text-gray-500 bg-gray-200 rounded-lg">Police</span>
                             </div>
                             <div class="flex gap-2 mt-5 ">
-                                <button class="w-1/2 h-8 border border-gray-200 rounded-md text-gray-400"><i class="fa-solid fa-copy"></i> Copy</button>
-                                <button data-name="Police" data-number="999" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white"><i class="fa-solid fa-phone"> </i>Call</button>
+                                <button class="copyBtn w-1/2 h-8 border border-gray-200 rounded-md text-gray-400 cursor-pointer"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <button data-name="Police" data-number="999" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"> </i>Call</button>
                             </div>
                         </div>
                     </div>
                      <!-- Fire Service Number -->
-                    <div class=" bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
+                    <div class="rounded-lg bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
                         <div class="flex justify-between">
                             <div class="p-2 bg-[#FFE3E1] rounded-xl">
                                 <img src="./assets/fire-service.png" alt="emergency" class="w-6 h-6"/>
                             </div>
-                            <i class="fa-solid fa-heart heartIcon"></i>
+                            <i class="fa-solid fa-heart heartIcon cursor-pointer"></i>
                         </div>
                         <div class="mt-4">
                             <h2 class="card-title text-lg font-bold">Fire Service Number </h2>
@@ -116,16 +115,16 @@
                                 <span class="px-2 text-gray-500 bg-gray-200 rounded-lg">Fire</span>
                             </div>
                             <div class="flex gap-2 mt-5 ">
-                                <button class="w-1/2 h-8 border border-gray-200 rounded-md text-gray-400"><i class="fa-solid fa-copy"></i> Copy</button>
-                                <button data-name="Fire Service" data-number="999" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white"><i class="fa-solid fa-phone"> </i>Call</button>
+                                <button class="copyBtn w-1/2 h-8 border border-gray-200 rounded-md text-gray-400 cursor-pointer"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <button data-name="Fire Service" data-number="999" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"> </i>Call</button>
                             </div>
                         </div>
                     </div>
                     <!-- Call History -->
-                    <div class="bg-base-100 shadow-sm w-[360px] h-auto mx-auto px-5 py-5 lg:row-span-3 order-last lg:order-none">
+                    <div class="rounded-lg bg-base-100 shadow-sm w-[360px] h-auto mx-auto px-5 py-5 lg:row-span-3 order-last lg:order-none">
                         <div class="flex justify-between">
                             <h1 class="text-lg font-semibold"> <i class="fa-solid fa-clock"></i>Call History</h1>
-                            <button id="clearHistory" class="bg-[#00A63E] rounded-full p-2 px-5 text-white">Clear</button>
+                            <button id="clearHistory" class="bg-[#00A63E] rounded-full p-2 px-5 text-white cursor-pointer">Clear</button>
 
                         </div>
                         <div>
@@ -134,12 +133,12 @@
                     </div>
                    
                     <!-- Ambulance Service       -->
-                    <div class=" bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
+                    <div class="rounded-lg bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
                         <div class="flex justify-between">
                             <div class="p-2 bg-[#FFE3E1] rounded-xl">
                                 <img src="./assets/emergency.png" alt="emergency" class="w-6 h-6"/>
                             </div>
-                            <i class="fa-solid fa-heart heartIcon"></i>
+                            <i class="fa-solid fa-heart heartIcon cursor-pointer"></i>
                         </div>
                         <div class="mt-4">
                             <h2 class="card-title text-lg font-bold">Ambulance Service</h2>
@@ -149,18 +148,18 @@
                                 <span class="px-2 text-gray-500 bg-gray-200 rounded-lg">Ambulance </span>
                             </div>
                             <div class="flex gap-2 mt-5 ">
-                                <button class="w-1/2 h-8 border border-gray-200 rounded-md text-gray-400"><i class="fa-solid fa-copy"></i> Copy</button>
-                                <button data-name="Ambulance" data-number="1994-999999" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white"><i class="fa-solid fa-phone"> </i>Call</button>
+                                <button class="copyBtn w-1/2 h-8 border border-gray-200 rounded-md text-gray-400 cursor-pointer"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <button data-name="Ambulance" data-number="1994-999999" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"> </i>Call</button>
                             </div>
                         </div>
                     </div>
                        <!-- Women & Child Helpline     -->
-                    <div class=" bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
+                    <div class="rounded-lg bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
                         <div class="flex justify-between">
                             <div class="p-2 bg-[#FFE3E1] rounded-xl">
                                 <img src="./assets/emergency.png" alt="emergency" class="w-6 h-6"/>
                             </div>
-                            <i class="fa-solid fa-heart heartIcon"></i>
+                            <i class="fa-solid fa-heart heartIcon cursor-pointer"></i>
                         </div>
                         <div class="mt-4">
                             <h2 class="card-title text-lg font-bold">Women & Child Helpline </h2>
@@ -170,18 +169,18 @@
                                 <span class="px-2 text-gray-500 bg-gray-200 rounded-lg">Help</span>
                             </div>
                             <div class="flex gap-2 mt-5 ">
-                                <button class="w-1/2 h-8 border border-gray-200 rounded-md text-gray-400"><i class="fa-solid fa-copy"></i> Copy</button>
-                                <button data-name="Women & Child Help" data-number="109" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white"><i class="fa-solid fa-phone"> </i>Call</button>
+                                <button class="copyBtn w-1/2 h-8 border border-gray-200 rounded-md text-gray-400 cursor-pointer"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <button data-name="Women & Child Help" data-number="109" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"> </i>Call</button>
                             </div>
                         </div>
                     </div>
                      <!-- Anti-Corruption Helpline -->
-                    <div class=" bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
+                    <div class="rounded-lg bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
                         <div class="flex justify-between">
                             <div class="p-2 bg-[#FFE3E1] rounded-xl">
                                 <img src="./assets/emergency.png" alt="emergency" class="w-6 h-6"/>
                             </div>
-                            <i class="fa-solid fa-heart heartIcon"></i>
+                            <i class="fa-solid fa-heart heartIcon cursor-pointer"></i>
                         </div>
                         <div class="mt-4">
                             <h2 class="card-title text-lg font-bold">Anti-Corruption Helpline</h2>
@@ -191,18 +190,18 @@
                                 <span class="px-2 text-gray-500 bg-gray-200 rounded-lg">Govt.</span>
                             </div>
                             <div class="flex gap-2 mt-5 ">
-                                <button class="w-1/2 h-8 border border-gray-200 rounded-md text-gray-400"><i class="fa-solid fa-copy"></i> Copy</button>
-                                <button data-name="Anti-Corruption" data-number="106" class="callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white"><i class="fa-solid fa-phone"> </i>Call</button>
+                                <button class="copyBtn w-1/2 h-8 border border-gray-200 rounded-md text-gray-400 cursor-pointer"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <button data-name="Anti-Corruption" data-number="106" class="callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"> </i>Call</button>
                             </div>
                         </div>
                     </div>
                     <!-- Electricity Helpline -->
-                    <div class=" bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
+                    <div class="rounded-lg bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
                         <div class="flex justify-between">
                             <div class="p-2 bg-[#FFE3E1] rounded-xl">
                                 <img src="./assets/emergency.png" alt="emergency" class="w-6 h-6"/>
                             </div>
-                            <i class="fa-solid fa-heart heartIcon"></i>
+                            <i class="fa-solid fa-heart heartIcon cursor-pointer"></i>
                         </div>
                         <div class="mt-4">
                             <h2 class="card-title text-lg font-bold">Electricity Helpline</h2>
@@ -212,18 +211,18 @@
                                 <span class="px-2 text-gray-500 bg-gray-200 rounded-lg">Electricity </span>
                             </div>
                             <div class="flex gap-2 mt-5 ">
-                                <button class="w-1/2 h-8 border border-gray-200 rounded-md text-gray-400"><i class="fa-solid fa-copy"></i> Copy</button>
-                                <button data-name="Electricity" data-number="16216" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white"><i class="fa-solid fa-phone"> </i>Call</button>
+                                <button class="copyBtn w-1/2 h-8 border border-gray-200 rounded-md text-gray-400 cursor-pointer"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <button data-name="Electricity" data-number="16216" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"> </i>Call</button>
                             </div>
                         </div>
                     </div>
                      <!-- Brac Helpline -->
-                    <div class=" bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
+                    <div class="rounded-lg bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
                         <div class="flex justify-between">
                             <div class="p-2 bg-[#FFE3E1] rounded-xl">
                                 <img src="./assets/brac.png" alt="emergency" class="w-6 h-6"/>
                             </div>
-                            <i class="fa-solid fa-heart heartIcon"></i>
+                            <i class="fa-solid fa-heart heartIcon cursor-pointer"></i>
                         </div>
                         <div class="mt-4">
                             <h2 class="card-title text-lg font-bold">Brac Helpline</h2>
@@ -233,18 +232,18 @@
                                 <span class="px-2 text-gray-500 bg-gray-200 rounded-lg">NGO</span>
                             </div>
                             <div class="flex gap-2 mt-5 ">
-                                <button class="w-1/2 h-8 border border-gray-200 rounded-md text-gray-400"><i class="fa-solid fa-copy"></i> Copy</button>
-                                <button data-name="Brac" data-number="16445" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white"><i class="fa-solid fa-phone"> </i>Call</button>
+                                <button class="copyBtn w-1/2 h-8 border border-gray-200 rounded-md text-gray-400 cursor-pointer"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <button data-name="Brac" data-number="16445" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"> </i>Call</button>
                             </div>
                         </div>
                     </div> 
                     <!-- Bangladesh Railway Helpline -->
-                    <div class=" bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
+                    <div class="rounded-lg bg-base-100 mx-auto lg:w-[300px] w-[360px] h-[280px] shadow-sm px-5 py-5">
                         <div class="flex justify-between">
                             <div class="p-2 bg-[#FFE3E1] rounded-xl">
                                 <img src="./assets/emergency.png" alt="emergency" class="w-6 h-6"/>
                             </div>
-                            <i class="fa-solid fa-heart heartIcon"></i>
+                            <i class="fa-solid fa-heart heartIcon cursor-pointer"></i>
                         </div>
                         <div class="mt-4">
                             <h2 class="card-title text-lg font-bold">Bangladesh Railway Helpline</h2>
@@ -254,8 +253,8 @@
                                 <span class="px-2 text-gray-500 bg-gray-200 rounded-lg">Travel</span>
                             </div>
                             <div class="flex gap-2 mt-5 ">
-                                <button class="w-1/2 h-8 border border-gray-200 rounded-md text-gray-400"><i class="fa-solid fa-copy"></i> Copy</button>
-                                <button data-name="Railway Helpline" data-number="163" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white"><i class="fa-solid fa-phone"> </i>Call</button>
+                                <button class="copyBtn w-1/2 h-8 border border-gray-200 rounded-md text-gray-400 cursor-pointer"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <button data-name="Railway Helpline" data-number="163" class=" callBtn w-1/2 h-8 bg-[#00A63E] rounded-md text-white cursor-pointer"><i class="fa-solid fa-phone"> </i>Call</button>
                             </div>
                         </div>
                     </div>
