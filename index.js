@@ -73,12 +73,7 @@
 
         function updateCallHistory() {
             const historyContainer = getElement('callHistory');
-            
-            if (callHistory.length === 0) {
-                historyContainer.innerHTML = '<div class="text-gray-500 text-center py-4"></div>';
-                return;
-            }
-            
+        
             let historyHTML = '';
             for (let i = callHistory.length - 1; i >= 0; i--) {
                 const call = callHistory[i];
